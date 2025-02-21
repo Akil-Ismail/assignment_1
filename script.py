@@ -35,8 +35,13 @@ remainder=salary-total
 print("------------------------------------------------------------------------"+
     "\nthe remainder of the salary after the above expenses is :"+ str(remainder))
 
-#display The monthly rent and electricity multiplied by 12 to estimate yearly rent and electricity costs.
-#display total salary for the month raised to the power of 2 (just for fun).
+#display The monthly rent and electricity multiplied by 12 to estimate yearly rent and electricity costs:
+print("------------------------------------------------------------------------"+
+    "\nthe yearly rent is estimated by :"+ str(12*rent)+
+    "\nthe yearly electricity cost is estimated by :"+ str(12*electricity))
+
+#display total salary for the month raised to the power of 2 (just for fun):
+
 #display Assume we save an additional random amount (e.g., $50) each month, calculate how much would be left if this amount is divided by the total amount allocated to savings. 
 
 #Finally, the script should output all the results in a readable format.(>>>>> JUST A REMARK <<<<<<)
