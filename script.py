@@ -1,19 +1,30 @@
 # input salary for the month:
-salary=int(input("please enter your salary for the month : ")) 
+salary=float(input("please enter your salary for the month : ")) 
 
 # input the name of the month you are storing the salary for:
 month=str(input("please enter the name of the month you are storing the salary for : "))
 
 # input savings:
-savings=int(input("please enter the following percentages : \n \t • savings : ")) 
+savings=float(input("please enter the following percentages : \n \t • savings : ")) 
 
 # input rent:
-rent=int(input("\t • rent : "))
+rent=float(input("\t • rent : "))
 
 # input electricity:
-electricity=int(input("\t • electricity : ")) 
+electricity=float(input("\t • electricity : ")) 
 
-#display amount allocated to savings, rent, and electricity.
+#display amount allocated to savings, rent, and electricity:
+savings=(salary*(savings*(10**-2)))
+
+rent=(salary*(rent*(10**-2)))
+
+electricity=(salary*(electricity*(10**-2)))
+
+print("------------------------------------------------------------------------"+
+    "\nthe ammount allocated to savings is :"+ str(savings) +
+    "\nthe ammount allocated to rent is :"+ str(rent) +
+    "\nthe ammount allocated to electricity is :"+ str(electricity))
+
 #display total amount spent on savings, rent, and electricity combined.
 #display The remainder of the salary after these expenses.
 #display The monthly rent and electricity multiplied by 12 to estimate yearly rent and electricity costs.
