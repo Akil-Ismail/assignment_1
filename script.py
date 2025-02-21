@@ -41,7 +41,15 @@ print("------------------------------------------------------------------------"
     "\nthe yearly electricity cost is estimated by :"+ str(12*electricity))
 
 #display total salary for the month raised to the power of 2 (just for fun):
+print("------------------------------------------------------------------------"+
+    "\nthe total salary for the month raised to the power of 2 is :"+ str(salary**2))
 
-#display Assume we save an additional random amount (e.g., $50) each month, calculate how much would be left if this amount is divided by the total amount allocated to savings. 
+#display Assume we save an additional random amount (e.g., $50) each month, 
+# calculate how much would be left if this amount is divided by the total amount allocated to savings:
+import random
+x = random.randint(0, 200)
+savings_2=(x/salary)*(100)
+print("------------------------------------------------------------------------"+
+    "\nif the total savings were more by "+ str(x)+" dollars each month, you would be saving "+str(savings_2)+" percent more each month"+
+    "------------------------------------------------------------------------")
 
-#Finally, the script should output all the results in a readable format.(>>>>> JUST A REMARK <<<<<<)
